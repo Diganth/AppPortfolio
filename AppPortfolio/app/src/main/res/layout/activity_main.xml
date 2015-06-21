@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="#E0F7FA"
+    android:gravity="center_horizontal"
+    android:text="@string/layout"
+    android:id="@+id/mainLayoutRoot"
+    android:minHeight="@dimen/activity_vertical_margin"
+    android:minWidth="@dimen/activity_horizontal_margin"
+    android:focusableInTouchMode="true"
+    android:backgroundTint="#ffd8d8d8">
+
+    <TextView
+        android:layout_width="@dimen/txtHeight"
+        android:layout_height="@dimen/txtWidth"
+        android:text="@string/my_title"
+        android:id="@+id/txtViewHeader"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/labelSize"
+        android:gravity="center"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/firstApp"
+        android:id="@+id/firstApp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/txtViewHeader"
+        android:layout_alignStart="@+id/txtViewHeader"
+        android:layout_alignEnd="@+id/txtViewHeader"
+        android:elevation="@dimen/buttonElevation"
+        android:background="#f57c00"
+        android:onClick="sendMessage"
+        android:focusable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/secondApp"
+        android:id="@+id/secondApp"
+        android:layout_below="@+id/firstApp"
+        android:layout_alignStart="@+id/firstApp"
+        android:layout_alignEnd="@+id/firstApp"
+        android:layout_marginTop="12dp"
+        android:elevation="@dimen/buttonElevation"
+        android:background="#f57c00"
+        android:onClick="sendMessage"
+        android:focusable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thirdApp"
+        android:id="@+id/thirdApp"
+        android:layout_below="@+id/secondApp"
+        android:layout_alignStart="@+id/secondApp"
+        android:layout_alignEnd="@+id/secondApp"
+        android:layout_marginTop="12dp"
+        android:elevation="@dimen/buttonElevation"
+        android:background="#f57c00"
+        android:onClick="sendMessage"
+        android:focusable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fourthApp"
+        android:id="@+id/fourthApp"
+        android:layout_below="@+id/thirdApp"
+        android:layout_alignStart="@+id/thirdApp"
+        android:layout_alignEnd="@+id/thirdApp"
+        android:layout_marginTop="12dp"
+        android:elevation="@dimen/buttonElevation"
+        android:background="#f57c00"
+        android:onClick="sendMessage"
+        android:focusable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fifthApp"
+        android:id="@+id/fifthApp"
+        android:layout_below="@+id/fourthApp"
+        android:layout_alignStart="@+id/fourthApp"
+        android:layout_alignEnd="@+id/fourthApp"
+        android:layout_marginTop="12dp"
+        android:elevation="@dimen/buttonElevation"
+        android:background="#f57c00"
+        android:onClick="sendMessage"
+        android:focusable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/finalApp"
+        android:id="@+id/finalApp"
+        android:layout_below="@+id/fifthApp"
+        android:layout_alignStart="@+id/fifthApp"
+        android:layout_alignEnd="@+id/fifthApp"
+        android:layout_marginTop="12dp"
+        android:elevation="@dimen/buttonElevation"
+        android:background="#9c27b0"
+        android:textColor="@android:color/white"
+        android:onClick="sendMessage"
+        android:focusable="true" />
+
+</RelativeLayout>
